@@ -1,0 +1,106 @@
+<table class="table table-bordered">
+	<tr>
+		<td class="main error">$_SERVER:</td>
+		<td class="error"></td>
+	</tr>
+	<tr>
+		<td class="main">PHP_SELF</td>
+		<td>the filename of the currently executing script, relative to the document root</td>
+	</tr>
+	<tr>
+		<td class="main">SERVER_ADDR</td>
+		<td>the IP address of the server</td>
+	</tr>
+	<tr>
+    	<td class="main">SERVER_NAME</td>
+    	<td>the name of the server</td>
+	</tr>
+	<tr>
+	    <td class="main">REQUEST_METHOD</td>
+	    <td>which request method was used to access the page: GET, HEAD, POST, PUT</td>
+	</tr>
+	<tr>
+	    <td class="main">QUERY_STRING</td>
+	    <td>the query string, if any, via which the page was accessed</td>
+	</tr>
+	<tr>
+	    <td class="main">DOCUMENT_ROOT</td>
+	    <td>the document root directory under which the current script is executing</td>
+	</tr>
+	<tr>
+	    <td class="main">HTTP_REFERER</td>
+	    <td>the address of the page (if any) which referred the user agent to the current page</td>
+	</tr>
+	<tr>
+	    <td class="main">REMOTE_ADDR</td>
+	    <td>the IP address from which the user is viewing the current page</td>
+	</tr>
+	<tr>
+	    <td class="main">SCRIPT_FILENAME</td>
+	    <td>the absolute pathname of the currently executing script</td>
+	</tr>
+	<tr>
+	    <td class="main">REQUEST_URI</td>
+	    <td>The URI which was given in order to access this page; e.g. /index.html</td>
+	</tr>
+
+	<tr>
+		<td class="main error">$_FILES:</td>
+		<td class="error"></td>
+	</tr>
+	<tr>
+	    <td class="main">$_FILES['userfile']['name']</td>
+	    <td>the original name of the file on the client machine</td>
+	</tr>
+	<tr>
+	    <td class="main">$_FILES['userfile']['type']</td>
+	    <td>the mime type of the file, if the browser provided this information</td>
+	</tr>
+	<tr>
+	    <td class="main">$_FILES['userfile']['size']</td>
+	    <td>the size, in bytes, of the uploaded file</td>
+	</tr>
+	<tr>
+	    <td class="main">$_FILES['userfile']['tmp_name']</td>
+	    <td>the temporary filename of the file in which the uploaded file was stored on the server</td>
+	</tr>
+	<tr>
+	    <td class="main">$_FILES['userfile']['error']</td>
+	    <td>The error code associated with this file upload</td>
+	</tr>
+
+	<tr>
+		<td class="main error">Error codes:</td>
+		<td class="error"></td>
+	</tr>
+	<tr>
+	    <td class="main">UPLOAD_ERR_OK or value 1</td>
+	    <td>no error</td>
+	</tr>
+	<tr>
+	    <td class="main">UPLOAD_ERR_INI_SIZE or value 2</td>
+	    <td>the uploaded file exceeds the upload_max_filesize directive in php.ini</td>
+	</tr>
+	<tr>
+	    <td class="main">UPLOAD_ERR_PARTIAL or value 3</td>
+	    <td>the uploaded file was only partially uploaded</td>
+	</tr>
+	<tr>
+	    <td class="main">UPLOAD_ERR_NO_FILE or value 4</td>
+	    <td>no file was uploaded</td>
+	</tr>
+	<tr>
+	    <td class="main">UPLOAD_ERR_NO_TMP_DIR or value 5</td>
+	    <td>missing temporary folder</td>
+	</tr>
+	<tr>
+	    <td class="main">UPLOAD_ERR_CANT_WRITE or value 7</td>
+	    <td>failed to write file to disk</td>
+	</tr>
+	<tr>
+	    <td class="main">UPLOAD_ERR_EXTENSION or value 8</td>
+	    <td>file upload stopped by extension</td>
+	</tr>
+</table>
+
+<div class="alert alert-info">Note: The values in the array are provided by the server, there's no guarantee that all the values will be available on your configuration. In this list you can find the most used values only.</div>

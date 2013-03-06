@@ -1,0 +1,132 @@
+<table class="table table-bordered ">
+	<tr>
+		<td class="main error">Functions:</td>
+		<td class="error"></td>
+	</tr>
+	<tr>
+		<td class="main">date() <a class="btn btn-mini btn-primary" href="http://www.php.net/manual/en/function.date.php" target="_blank">more</a></td>
+		<td>
+			<code>$epoch = 1340000000;</code> <br> <code>echo date('r', $epoch); //Mon, 18 Jun 2012 02:13:20 -0400
+		</td>
+	</tr>
+	<tr>
+		<td class="main">DateTime() <a class="btn btn-mini btn-primary" href="http://php.net/manual/en/class.datetime.php" target="_blank">more</a></td>
+		<td>
+			<code>$epoch = 1340000000;</code>
+			<br><code>$dt = new DateTime("@$epoch");</code>
+			<br><code>echo $dt->format('Y-m-d H:i:s'); //2012-06-18 06:13:20</code>
+			<br> 
+			<br><code>$date = new DateTime('01/15/2010');</code>
+			<br><code>echo $date->format('U'); //1340000000</code>
+		</td>
+	</tr>
+	<tr>
+		<td class="main">date_create() <a class="btn btn-mini btn-primary" href="http://php.net/manual/en/function.date-create.php" target="_blank">more</a></td>
+		<td>
+			<code>$date = date_create('01/15/2010');</code>
+			<br><code>echo date_format($date, 'U'); //1263531600</code>
+		</td>
+	</tr>
+	<tr>
+		<td class="main">strtotime() <a class="btn btn-mini btn-primary" href="http://php.net/manual/en/function.strtotime.php" target="_blank">more</a></td>
+		<td>
+			<code>strtotime("15 November 2012");</code>
+			<br><code>strtotime("2012/11/15");</code>
+			<br><code>strtotime("+10 days");</code>
+			<br><code><span style="color:#61A346">Note: strtotime("invalid date") === false</span></code>
+		</td>
+	</tr>
+	<tr>
+		<td class="main">mktime() <a class="btn btn-mini btn-primary" href="http://php.net/manual/en/function.mktime.php" target="_blank">more</a></td>
+		<td><code>mktime ( $hour, $minute, $second, $month, $day, $year );</code></td>
+	</tr>
+	<tr>
+		<td class="main">time() <a class="btn btn-mini btn-primary" href="http://www.php.net/manual/en/function.time.php" target="_blank">more</a></td>
+		<td>Return current Unix timestamp</td>
+	</tr>
+	<tr>
+		<td class="main">microtime(true) <a class="btn btn-mini btn-primary" href="http://www.php.net/manual/en/function.strtotime.php" target="_blank">more</a></td>
+		<td>Returns timestamp with microseconds (param: true=float, false=string)</td>
+	</tr>
+
+	<tr>
+		<td class="main error">Date/Time Formats:</td>
+		<td class="error"></td>
+	</tr>
+	<tr>
+    	<td class="main">d</td>
+    	<td>01 - 31</td>
+	</tr>
+	<tr>
+	    <td class="main">j</td>
+	    <td>1 - 31</td>
+	</tr>
+	<tr>
+	    <td class="main">D</td>
+	    <td>Mon - Sun</td>
+	</tr>
+	<tr>
+	    <td class="main">l</td>
+	    <td>Monday - Sunday</td>
+	</tr>
+	<tr>
+	    <td class="main">M</td>
+	    <td>Jan - Dec</td>
+	</tr>
+	<tr>
+	    <td class="main">F</td>
+	    <td>January - December</td>
+	</tr>
+	<tr>
+	    <td class="main">m</td>
+	    <td>01 - 12</td>
+	</tr>
+	<tr>
+	    <td class="main">n</td>
+	    <td>1 - 12</td>
+	</tr>
+	<tr>
+	    <td class="main">Y</td>
+	    <td>2003, 2008</td>
+	</tr>
+	<tr>
+	    <td class="main">y</td>
+	    <td>03, 08</td>
+	</tr>
+	<tr>
+	    <td class="main">a</td>
+	    <td>am, pm</td>
+	</tr>
+	<tr>
+	    <td class="main">A</td>
+	    <td>AM, PM</td>
+	</tr>
+	<tr>
+	    <td class="main">g</td>
+	    <td>12 hours - 1 - 12</td>
+	</tr>
+	<tr>
+	    <td class="main">h</td>
+	    <td>12 hours - 00 - 12</td>
+	</tr>
+	<tr>
+	    <td class="main">H</td>
+	    <td>24 hours - 00 - 23</td>
+	</tr>
+	<tr>
+	    <td class="main">G</td>
+	    <td>24 hours - 0 - 23</td>
+	</tr>
+	<tr>
+	    <td class="main">i</td>
+	    <td>minutes - 00 - 59</td>
+	</tr>
+	<tr>
+	    <td class="main">s</td>
+	    <td>seconds - 00 - 59</td>
+	</tr>
+
+</table>
+
+<div class="alert alert-info">Note: The values in the array are provided by the server, there's no guarantee that all the values will be available on your configuration. In this list you can find the most used values only.</div>
+

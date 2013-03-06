@@ -1,0 +1,139 @@
+<table class="table table-bordered gray">
+    <tr>
+      <td class="main"></td>
+      <td class="main">gettype()</td>
+      <td class="main">empty()</td>
+      <td class="main">is_null()</td>
+      <td class="main">isSet()</td>
+      <td class="main">(bool)</td>
+    </tr>
+    <tr>
+      <td class="main">$x = "";</td>
+      <td class="info">string</td>
+      <td class="success">true</td>
+      <td class="error">false</td>
+      <td class="success">true</td>
+      <td class="error">false</td>
+    </tr>
+    <tr>
+      <td class="main">$x = null;</td>
+      <td class="info">NULL</td>
+      <td class="success">true</td>
+      <td class="success">true</td>
+      <td class="error">false</td>
+      <td class="error">false</td>
+    </tr>
+    <tr>
+      <td class="main">var $x; (not set)</td>
+      <td class="info">NULL</td>
+      <td class="success">true</td>
+      <td class="success">true</td>
+      <td class="error">false</td>
+      <td class="error">false</td>
+  </tr>
+  <tr>
+      <td class="main">$x = array();</td>
+      <td class="info">array</td>
+      <td class="success">true</td>
+      <td class="error">false</td>
+      <td class="success">true</td>
+      <td class="error">false</td>
+  </tr>
+  <tr>
+      <td class="main">$x = false</td>
+      <td class="info">boolean</td>
+      <td class="success">true</td>
+      <td class="error">false</td>
+      <td class="success">true</td>
+      <td class="error">false</td>
+  </tr>
+  <tr>
+      <td class="main">$x = 15;</td>
+      <td class="info">integer</td>
+      <td class="error">false</td>
+      <td class="error">false</td>
+      <td class="success">true</td>
+      <td class="success">true</td>
+  </tr>
+  <tr>
+      <td class="main">$x = 1;</td>
+      <td class="info">integer</td>
+      <td class="error">false</td>
+      <td class="error">false</td>
+      <td class="success">true</td>
+      <td class="success">true</td>
+  </tr>
+  <tr>
+      <td class="main">$x = 0;</td>
+      <td class="info">integer</td>
+      <td class="success">true</td>
+      <td class="error">false</td>
+      <td class="success">true</td>
+      <td class="error">false</td>
+  </tr>
+  <tr>
+      <td class="main">$x = -1;</td>
+      <td class="info">integer</td>
+      <td class="error">false</td>
+      <td class="error">false</td>
+      <td class="success">true</td>
+      <td class="success">true</td>
+  </tr>
+  <tr>
+      <td class="main">$x = "15";</td>
+      <td class="info">string</td>
+      <td class="error">false</td>
+      <td class="error">false</td>
+      <td class="success">true</td>
+      <td class="success">true</td>
+  </tr>
+  <tr>
+      <td class="main">$x = "1";</td>
+      <td class="info">string</td>
+      <td class="error">false</td>
+      <td class="error">false</td>
+      <td class="success">true</td>
+      <td class="success">true</td>
+  </tr>
+  <tr>
+      <td class="main">$x = "0";</td>
+      <td class="info">string</td>
+      <td class="success">true</td>
+      <td class="error">false</td>
+      <td class="success">true</td>
+      <td class="error">false</td>
+  </tr>
+  <tr>
+      <td class="main">$x = "-1";</td>
+      <td class="info">string</td>
+      <td class="error">false</td>
+      <td class="error">false</td>
+      <td class="success">true</td>
+      <td class="success">true</td>
+  </tr>
+  <tr>
+      <td class="main">$x = "foo";</td>
+      <td class="info">string</td>
+      <td class="error">false</td>
+      <td class="error">false</td>
+      <td class="success">true</td>
+      <td class="success">true</td>
+  </tr>
+  <tr>
+      <td class="main">$x = "true";</td>
+      <td class="info">string</td>
+      <td class="error">false</td>
+      <td class="error">false</td>
+      <td class="success">true</td>
+      <td class="success">true</td>
+  </tr>
+  <tr>
+      <td class="main">$x = "false";</td>
+      <td class="info">string</td>
+      <td class="error">false</td>
+      <td class="error">false</td>
+      <td class="success">true</td>
+      <td class="success">true</td>
+  </tr>
+</table>
+<div class="alert alert-info">Note: empty() and isSet() don't give a warning when the variable has not been defined before.</div>

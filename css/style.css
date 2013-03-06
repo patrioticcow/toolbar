@@ -1,0 +1,7 @@
+.success{background-color: #dff0d8;}
+.error{background-color: #f2dede;}
+.warning{background-color: #fcf8e3;}
+.info{background-color: #d9edf7;}
+.gray{background-color: #cecece;}
+td:hover, .hilight {background-color: #F17979;}
+.main{font-weight: bold;}
